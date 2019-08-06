@@ -19,5 +19,5 @@ Aşağıdaki şekilde server.cfg nize ekleyin.
 ```
 start instance
 start mythic_progbar
-start esx_propertymotels
+start esx_property
 ```
