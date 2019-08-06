@@ -3,7 +3,7 @@
 
 # Gereksinimler
 
-+ [instance](https://github.com/ESX-Org/instance) (Bu versiyonu kurun.)
++ [instance](https://github.com/ESX-Org/instance) (İndirdiğiniz dosyadaki sürümü kurarsanız motel odasında ses karışıklığı olmaz)
 + [cron](https://github.com/ESX-Org/cron)
 + [esx_addonaccount](https://github.com/ESX-Org/esx_addonaccount)
 + [esx_addoninventory](https://github.com/ESX-Org/esx_addoninventory)
