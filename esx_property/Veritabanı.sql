@@ -16,9 +16,21 @@ CREATE TABLE `properties` (
   `type` varchar(255) NOT NULL DEFAULT 'property'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Tablo döküm verisi `properties`
---
+CREATE TABLE `owned_properties` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `price` double NOT NULL,
+  `rented` int(11) NOT NULL,
+  `owner` varchar(60) NOT NULL,
+  `type` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `owned_properties`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `owned_properties`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
 
 INSERT INTO `properties` (`id`, `name`, `label`, `entering`, `exit`, `inside`, `outside`, `ipls`, `gateway`, `is_single`, `is_room`, `is_gateway`, `room_menu`, `price`, `type`) VALUES
 (1, 'MotelRoom1', 'Room 1', '{\"y\":-218.82,\"z\":54.22,\"x\":312.86}', '{\"x\":151.48,\"y\":-1007.59,\"z\":-99.00}', '{\"y\":-1007.59,\"z\":-99.00,\"x\":151.48}', '{\"y\":-218.82,\"z\":54.22,\"x\":312.86}', '[]', NULL, 1, 1, 0, '{\"x\":151.62,\"y\":-1003.27,\"z\":-99.00}', 10000, 'motel'),
